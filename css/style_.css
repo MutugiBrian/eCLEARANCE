@@ -1,0 +1,205 @@
+/* Your custom styles */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+.preload{
+  background-color: 	 #4FB3FF  !important;  #4FB3FF  
+
+}
+.preload .wrapper {
+  font-family: 'Lato', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.preload p {
+  position: relative;
+  margin-top: -3%;
+  z-index: 5;
+  width: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight:bold;
+  font-family: "Agency FB regular" !important;
+}
+.preload .perp {
+  border-radius: 200px;
+  width: 250px;
+  height: 250px;
+  color:red;
+  -webkit-animation: rotating 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -moz-animation: rotating 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -o-animation: rotating 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -ms-transition: rotating 2s cubic-bezier(.17, .67, .31, .95) infinite;
+  animation: rotating 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 300ms ease-out;
+  border: 4px outset #9932CC;
+}
+
+.preload #p2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -222px;
+  background-color: transparent;
+  width: 190px;
+  height: 190px;
+  border: 3.5px inset purple;
+  z-index: 5;
+  -webkit-animation: rotatingback 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -moz-animation: rotatingback 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -o-animation: rotatingback 1s cubic-bezier(0, 0, 0, 0) infinite;
+  -ms-transition: rotatingback 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  animation: rotatingback 1s cubic-bezier(.17, .67, .31, .95) infinite;
+}
+
+.preload #p3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -162px;
+  background-color: transparent;
+  width: 130px;
+  height: 130px;
+  border: 2px inset white;
+  z-index: 5;
+  -webkit-animation: rotating2 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -moz-animation: rotating2 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -o-animation: rotating2 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  -ms-transition: rotating2 1s cubic-bezier(.17, .67, .31, .95) infinite;
+  animation: rotating2 1s cubic-bezier(.17, .67, .31, .95) infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotate(470deg);
+  }
+}
+
+@-webkit-keyframes rotatingback {
+  from {
+    -webkit-transform: rotate(100deg);
+  }
+  to {
+    -webkit-transform: rotate(-260deg);
+  }
+}
+
+@-webkit-keyframes rotating2 {
+  from {
+    -webkit-transform: rotate(110deg);
+  }
+  to {
+    -webkit-transform: rotate(470deg);
+  }
+}
+
+
+
+@-moz-keyframes rotating2 {
+  from {
+    -moz-transform: rotate(110deg);
+  }
+  to {
+    -moz-transform: rotate(470deg);
+  }
+}
+
+
+
+
+@-o-keyframes rotating2 {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(470deg);
+  }
+}
+
+
+
+
+@-ms-keyframes rotating2 {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+
+
+
+@keyframes rotating2 {
+  from {
+    transform: rotate(110deg);
+  }
+  to {
+    transform: rotate(470deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+#mdb-preloader{
+ background-color: 	 #4FB3FF  !important;
+}
+
+
+
+/*Intro*/
+.intro-bg1{
+	background: url("1.jpg") no-repeat;
+}
+.intro-bg2{
+	background: url("2.jpg") no-repeat;
+}
+.intro-bg3{
+	background: url("3.jpg") no-repeat;
+}
+
+
+
+    
+    
+    #img-upload{
+    height: 170px;
+   width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 10px;
+background: url(URL) no-repeat;
+box-shadow: 0 0 30px rgba(255,255,255, 1);
+-webkit-box-shadow: 0 0 40px rgba(255,255,255, 1);
+-moz-box-shadow: 0 0 40px rgba(	255,255,255, 1); 
+border-style: inset;
+ 
+}      
+      
+       
