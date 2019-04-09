@@ -448,18 +448,23 @@ style="border-color:<?php echo $dchex; ?> !important;border-width: 3px !importan
 
         <!--Table head-->
         <thead>
-          <tr >
+          <tr ><!-- 
             <th>
               <input class="form-check-input" type="checkbox" id="checkbox">
               <label class="form-check-label" for="checkbox" class="mr-2 label-table"></label>
-            </th>
+            </th> -->
             <th class="th-lg" >
               <a >NAMES
                 <i class="fas fa-user ml-1"></i>
               </a>
             </th>
             <?php 
+        $si =  $_SESSION['sid'];
+        if(isset($si)){
+        $query = "SELECT * FROM `sections` WHERE id =  '".$si."' ";
+        }else{
         $query = "SELECT * FROM `sections`";
+      }
         $dq = makequery($query);
         if($dq[0] == 'success'){
         while($row = $dq[1]->fetch_assoc()){
@@ -475,6 +480,11 @@ style="border-color:<?php echo $dchex; ?> !important;border-width: 3px !importan
             <th class="th-lg">
               <a href="">ACTIONS
                 <i class="fas fa-cogs ml-1"></i>
+              </a>
+            </th>
+             <th class="th-lg">
+              <a href="">MESSAGE
+                <i class="fas fa-envelope ml-1"></i>
               </a>
             </th>
           </tr>
@@ -495,10 +505,10 @@ style="border-color:<?php echo $dchex; ?> !important;border-width: 3px !importan
           ?>
          
           <tr>
-            <th scope="row">
+            <!-- <th scope="row">
               <input class="form-check-input" type="checkbox" id="checkbox<?php echo $uid; ?>">
               <label class="form-check-label" for="checkbox<?php echo $uid; ?>" class="label-table"></label>
-            </th>
+            </th> -->
             <td><?php echo $em; ?></td>
 
 

@@ -9,6 +9,7 @@
   $phone = ltrim($phone, '0');
   $course    = $_POST['course'];
   $regno     = $_POST['regno'];
+  $pass      = md5($pass);
 
 
 

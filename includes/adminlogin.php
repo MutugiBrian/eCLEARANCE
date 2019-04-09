@@ -37,6 +37,7 @@ if(isset($_POST['lis'])){
   $_SESSION['course'] = $row["course"];
   $_SESSION['email'] = $row["email"];
   $_SESSION['phone'] = $row["phone"];
+   $_SESSION['sid'] = $_POST["sid"];
   $_SESSION['loggedin'] = "TRUE";
   $_SESSION['ut'] = "a";
   $loggedin = 'TRUE';
@@ -179,6 +180,39 @@ color:white;
     <form class="text-center needs-validation pt-2" method="post" action="" style="color: #757575;">
 
       <!-- Email -->
+
+                    <!-- course -->
+         <div class="md-form">
+                    <select class="custom-select browser-default md-form validate" id="sid" name="sid" required>
+                       <option value="">Select Section</option>
+                   <?php
+
+
+                   $sq2 = 'SELECT * FROM `sections`';
+$dq = makequery($sq2);
+        if($dq[0] == 'success'){
+        while($row2 = $dq[1]->fetch_assoc()){
+          $nm = $row2['name'];
+           $si = $row2['id'];
+            ?>
+         <option value="<?php echo $si; ?>"><?php echo $nm; ?></option>
+       <?php }
+    }else{?>
+            <option value="">NO SECTIONS</option>
+
+   <?php }
+     
+
+
+
+
+                   ?>
+    }
+                  </select>
+                  </div>
+
+               
+
       <div class="md-form">
         <input type="email" id="email" name="email"  class="form-control" required>
         <label for="email">E-mail</label>

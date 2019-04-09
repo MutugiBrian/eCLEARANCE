@@ -4,7 +4,8 @@ if(isset($_POST['li'])){
 
 
   $email = $_POST['email'];
-  $pass  = $_POST['pass'];
+  $pass1  = $_POST['pass'];
+  $pass  = md5($pass1);
 
 
 
@@ -15,7 +16,7 @@ if(isset($_POST['li'])){
    if (mysqli_connect_errno($conn)){
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
    }else{
-   $sql = "SELECT * FROM users WHERE email = '$email' AND pass = '$pass'";
+   $sql = "SELECT * FROM users WHERE email = '$email' AND pass = '$pass' ";
    
    if ($result = mysqli_query($conn,$sql)){
       $rowcount = mysqli_num_rows($result);
